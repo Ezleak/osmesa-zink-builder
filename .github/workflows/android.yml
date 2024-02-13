@@ -36,14 +36,14 @@ jobs:
             -Dandroid-stub=true \
             -Dllvm=disabled \
             -Dxlib-lease=disabled \
-            -Degl=enabled \
+            -Degl=disabled \
             -Dgbm=disabled \
             -Dglx=disabled \
             -Dopengl=true \
             -Dosmesa=true \
             -Dvulkan-drivers= \
             -Dgallium-drivers=zink \
-            -Dshared-glapi=true \
+            -Dshared-glapi=false \
             -Dandroid-libbacktrace=disabled \
             -Dbuildtype=release
           ninja -C "build-android" install
